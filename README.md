@@ -4,6 +4,8 @@
 
 A multi-agent financial coach, built specifically for gig workers and freelancers with irregular income, that models income **variance** (not just an average), compares debt payoff strategies with real amortization math, and runs thousands of **Monte Carlo** simulated futures so you see a *probability* of staying solvent — not a single static budget.
 
+**🔗 Live demo:** [ai-financial-coach-agent.streamlit.app](https://ai-financial-coach-agent.streamlit.app/)
+
 **Core design rule the whole project follows:** the LLM never does arithmetic. Every number (income stats, debt payoff schedules, solvency probability) is computed in plain Python (numpy/pandas). The LLM's only job is to explain those pre-computed numbers in plain English. This means the app gives numerically correct results even if the LLM narration fails, times out, or isn't configured at all.
 
 ---
