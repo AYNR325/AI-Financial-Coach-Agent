@@ -1,0 +1,13 @@
+date,merchant,category,amount,type
+2025-01-05,Freelance Client Invoice,income,15000,income
+2025-01-05,Landlord Property Mgmt,rent,12000,expense
+2025-01-08,Local Grocery Store,groceries,2500,expense
+2025-01-10,City Power & Water,utilities,1800,expense
+2025-01-12,Uber,transport,450,expense
+2025-01-15,Netflix,subscriptions,649,expense
+2025-01-18,Cafe Coffee Day,eating_out,320,expense
+2025-01-20,Amazon,misc,999,expense
+2025-01-22,Upwork Payment,income,8000,income
+2025-02-01,Freelance Client Invoice,income,12000,income
+2025-02-01,Landlord Property Mgmt,rent,12000,expense
+2025-02-05,Local Grocery Store,groceries,2800,expense

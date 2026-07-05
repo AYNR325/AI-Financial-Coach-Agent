@@ -1,0 +1,18 @@
+{
+  "debts": [
+    {
+      "name": "Camera Equipment Loan",
+      "balance": 42000,
+      "apr": 15.0,
+      "minimum_payment": 1800
+    },
+    {
+      "name": "Credit Card - Kotak",
+      "balance": 15000,
+      "apr": 33.0,
+      "minimum_payment": 750
+    }
+  ],
+  "extra_monthly_payment_budget": 1500,
+  "notes": "Seasonal wedding photographer \u2014 extreme income variance, tests very high cv handling."
+}

@@ -1,0 +1,12 @@
+{
+  "debts": [
+    {
+      "name": "Education Loan",
+      "balance": 180000,
+      "apr": 8.5,
+      "minimum_payment": 2500
+    }
+  ],
+  "extra_monthly_payment_budget": 300,
+  "notes": "Student/early-career profile \u2014 low income, single low-interest education loan."
+}

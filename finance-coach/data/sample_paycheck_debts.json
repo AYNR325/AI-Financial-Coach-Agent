@@ -1,0 +1,18 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card",
+      "balance": 18000,
+      "apr": 32.0,
+      "minimum_payment": 900
+    },
+    {
+      "name": "Personal Loan",
+      "balance": 25000,
+      "apr": 14.0,
+      "minimum_payment": 800
+    }
+  ],
+  "extra_monthly_payment_budget": 500,
+  "notes": "Scaled for biweekly-paycheck income (~₹4,000–5,000/month)."
+}

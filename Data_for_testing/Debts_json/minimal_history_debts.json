@@ -1,0 +1,12 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card - HDFC",
+      "balance": 28000,
+      "apr": 36.0,
+      "minimum_payment": 1400
+    }
+  ],
+  "extra_monthly_payment_budget": 1000,
+  "notes": "Only 3 months of transaction history \u2014 tests the app's minimum-data edge case."
+}

@@ -1,0 +1,264 @@
+date,merchant,category,amount,type
+2025-01-01,Zomato Order,eating_out,600,expense
+2025-01-03,City Power & Water,utilities,1030,expense
+2025-01-03,Flipkart,misc,350,expense
+2025-01-04,Fiverr Payout,income,45100,income
+2025-01-04,Fiverr Payout,income,1800,income
+2025-01-04,Local Grocery Store,groceries,640,expense
+2025-01-04,Hotstar,subscriptions,350,expense
+2025-01-07,City Power & Water,utilities,1060,expense
+2025-01-08,Gym Membership,subscriptions,350,expense
+2025-01-09,Local Metro Card Recharge,transport,160,expense
+2025-01-09,Amazon,misc,530,expense
+2025-01-10,DMart,groceries,590,expense
+2025-01-10,Zomato Order,eating_out,290,expense
+2025-01-15,Landlord Property Mgmt,rent,12000,expense
+2025-01-18,Big Bazaar,groceries,590,expense
+2025-01-19,Big Bazaar,groceries,580,expense
+2025-01-20,Uber,transport,210,expense
+2025-01-24,Petrol Pump,transport,180,expense
+2025-01-24,Amazon,misc,660,expense
+2025-01-25,Swiggy Order,eating_out,390,expense
+2025-01-25,Swiggy Order,eating_out,380,expense
+2025-01-26,Big Bazaar,groceries,430,expense
+2025-01-27,Petrol Pump,transport,330,expense
+2025-01-27,Ola Cabs,transport,230,expense
+2025-02-01,Consulting Client Payment,income,35800,income
+2025-02-01,Gym Membership,subscriptions,350,expense
+2025-02-03,Amazon,misc,330,expense
+2025-02-03,Local Pharmacy,misc,290,expense
+2025-02-04,Big Bazaar,groceries,1580,expense
+2025-02-06,Hotstar,subscriptions,350,expense
+2025-02-07,City Power & Water,utilities,1080,expense
+2025-02-07,Zomato Order,eating_out,460,expense
+2025-02-08,Upwork Payment,income,6700,income
+2025-02-08,Piped Gas Co,utilities,1220,expense
+2025-02-09,Local Pharmacy,misc,680,expense
+2025-02-12,Petrol Pump,transport,800,expense
+2025-02-12,Local Dhaba,eating_out,1080,expense
+2025-02-14,Landlord Property Mgmt,rent,12000,expense
+2025-02-23,DMart,groceries,1400,expense
+2025-02-24,Petrol Pump,transport,820,expense
+2025-02-26,Local Dhaba,eating_out,400,expense
+2025-02-27,Amazon,misc,410,expense
+2025-03-01,Reliance Fresh,groceries,610,expense
+2025-03-01,Flipkart,misc,290,expense
+2025-03-02,Local Dhaba,eating_out,570,expense
+2025-03-03,Piped Gas Co,utilities,890,expense
+2025-03-03,City Power & Water,utilities,630,expense
+2025-03-04,Zomato Delivery Payout,income,4500,income
+2025-03-04,Big Bazaar,groceries,590,expense
+2025-03-05,Shanti Nagar Apartments,rent,12000,expense
+2025-03-05,Local Grocery Store,groceries,890,expense
+2025-03-06,Uber,transport,290,expense
+2025-03-07,Local Metro Card Recharge,transport,210,expense
+2025-03-09,Netflix,subscriptions,350,expense
+2025-03-10,Reliance Fresh,groceries,810,expense
+2025-03-10,Uber,transport,490,expense
+2025-03-10,Netflix,subscriptions,350,expense
+2025-03-10,Amazon,misc,260,expense
+2025-03-12,Fiverr Payout,income,9500,income
+2025-03-13,Zomato Order,eating_out,320,expense
+2025-03-15,Uber,transport,160,expense
+2025-03-16,Zomato Order,eating_out,350,expense
+2025-03-16,Big Bazaar,misc,160,expense
+2025-03-16,Flipkart,misc,430,expense
+2025-03-18,Upwork Payment,income,22600,income
+2025-03-18,Uber,transport,230,expense
+2025-03-18,Flipkart,misc,290,expense
+2025-03-19,Local Dhaba,eating_out,420,expense
+2025-03-25,Local Dhaba,eating_out,530,expense
+2025-04-03,Local Grocery Store,groceries,880,expense
+2025-04-05,Piped Gas Co,utilities,950,expense
+2025-04-06,City Power & Water,utilities,930,expense
+2025-04-07,Local Grocery Store,groceries,580,expense
+2025-04-08,Freelance Client Invoice,income,4600,income
+2025-04-14,Flipkart,misc,250,expense
+2025-04-15,DMart,groceries,760,expense
+2025-04-15,Cafe Coffee Day,eating_out,440,expense
+2025-04-15,Amazon,misc,380,expense
+2025-04-16,Consulting Client Payment,income,1300,income
+2025-04-16,Zomato Order,eating_out,440,expense
+2025-04-18,Petrol Pump,transport,760,expense
+2025-04-18,Spotify,subscriptions,350,expense
+2025-04-19,Fiverr Payout,income,18100,income
+2025-04-19,Shanti Nagar Apartments,rent,12000,expense
+2025-04-19,DMart,groceries,770,expense
+2025-04-21,Spotify,subscriptions,350,expense
+2025-04-21,Cafe Coffee Day,eating_out,730,expense
+2025-04-21,Local Pharmacy,misc,640,expense
+2025-04-22,Petrol Pump,transport,820,expense
+2025-04-22,Local Dhaba,eating_out,400,expense
+2025-04-23,Flipkart,misc,380,expense
+2025-05-04,Landlord Property Mgmt,rent,12000,expense
+2025-05-04,DMart,groceries,1540,expense
+2025-05-04,Netflix,subscriptions,350,expense
+2025-05-06,Flipkart,misc,500,expense
+2025-05-07,Amazon,misc,340,expense
+2025-05-09,City Power & Water,utilities,930,expense
+2025-05-12,Swiggy Delivery Payout,income,35500,income
+2025-05-12,Uber,transport,860,expense
+2025-05-12,Swiggy Order,eating_out,820,expense
+2025-05-16,Upwork Payment,income,2500,income
+2025-05-21,Amazon,misc,370,expense
+2025-05-22,Ola Cabs,transport,830,expense
+2025-05-23,Amazon,misc,150,expense
+2025-05-24,Big Bazaar,groceries,1410,expense
+2025-05-24,Airtel Broadband,utilities,1050,expense
+2025-05-24,Swiggy Order,eating_out,1180,expense
+2025-05-27,Gym Membership,subscriptions,350,expense
+2025-06-02,Airtel Broadband,utilities,1040,expense
+2025-06-04,Netflix,subscriptions,350,expense
+2025-06-05,Big Bazaar,groceries,1100,expense
+2025-06-07,Petrol Pump,transport,840,expense
+2025-06-07,Amazon,misc,270,expense
+2025-06-10,Zomato Delivery Payout,income,26300,income
+2025-06-12,Consulting Client Payment,income,600,income
+2025-06-13,Ola Cabs,transport,620,expense
+2025-06-15,Shanti Nagar Apartments,rent,12000,expense
+2025-06-15,City Power & Water,utilities,1010,expense
+2025-06-19,Cafe Coffee Day,eating_out,1090,expense
+2025-06-20,Zomato Order,eating_out,600,expense
+2025-06-20,Flipkart,misc,410,expense
+2025-06-21,Local Grocery Store,groceries,1260,expense
+2025-06-22,Freelance Client Invoice,income,9900,income
+2025-06-24,Spotify,subscriptions,350,expense
+2025-06-26,Big Bazaar,groceries,950,expense
+2025-06-26,Amazon,misc,740,expense
+2025-07-01,Fiverr Payout,income,13500,income
+2025-07-01,Uber,transport,230,expense
+2025-07-03,Ola Cabs,transport,240,expense
+2025-07-04,Swiggy Order,eating_out,880,expense
+2025-07-05,City Power & Water,utilities,780,expense
+2025-07-08,Local Metro Card Recharge,transport,150,expense
+2025-07-09,Consulting Client Payment,income,20000,income
+2025-07-10,Swiggy Delivery Payout,income,1400,income
+2025-07-10,Zomato Order,eating_out,400,expense
+2025-07-11,Local Grocery Store,groceries,700,expense
+2025-07-12,Netflix,subscriptions,350,expense
+2025-07-13,Uber,transport,260,expense
+2025-07-15,Reliance Fresh,groceries,720,expense
+2025-07-15,Netflix,subscriptions,350,expense
+2025-07-16,Cafe Coffee Day,eating_out,580,expense
+2025-07-16,Zomato Order,eating_out,540,expense
+2025-07-17,Shanti Nagar Apartments,rent,12000,expense
+2025-07-21,Local Pharmacy,misc,350,expense
+2025-07-22,Big Bazaar,groceries,920,expense
+2025-07-22,Airtel Broadband,utilities,980,expense
+2025-07-23,Flipkart,misc,670,expense
+2025-07-24,Big Bazaar,misc,1030,expense
+2025-07-25,Big Bazaar,groceries,630,expense
+2025-07-27,Local Metro Card Recharge,transport,290,expense
+2025-08-01,Big Bazaar,groceries,1790,expense
+2025-08-04,Petrol Pump,transport,490,expense
+2025-08-04,Flipkart,misc,100,expense
+2025-08-06,Local Metro Card Recharge,transport,360,expense
+2025-08-09,Consulting Client Payment,income,2400,income
+2025-08-10,Uber,transport,380,expense
+2025-08-11,Spotify,subscriptions,350,expense
+2025-08-12,Local Grocery Store,groceries,1420,expense
+2025-08-13,City Power & Water,utilities,600,expense
+2025-08-17,Amazon,misc,470,expense
+2025-08-18,Amazon,misc,510,expense
+2025-08-19,Upwork Payment,income,1500,income
+2025-08-20,Landlord Property Mgmt,rent,12000,expense
+2025-08-20,Hotstar,subscriptions,350,expense
+2025-08-21,City Power & Water,utilities,1020,expense
+2025-08-22,Local Dhaba,eating_out,1740,expense
+2025-08-24,Upwork Payment,income,26600,income
+2025-08-27,Swiggy Order,eating_out,1670,expense
+2025-09-02,Local Metro Card Recharge,transport,450,expense
+2025-09-05,Local Grocery Store,groceries,590,expense
+2025-09-06,Upwork Payment,income,26400,income
+2025-09-07,Local Metro Card Recharge,transport,750,expense
+2025-09-08,Big Bazaar,misc,420,expense
+2025-09-09,Landlord Property Mgmt,rent,12000,expense
+2025-09-09,Big Bazaar,misc,240,expense
+2025-09-11,Gym Membership,subscriptions,350,expense
+2025-09-11,Airtel Broadband,utilities,1000,expense
+2025-09-13,Swiggy Order,eating_out,680,expense
+2025-09-13,Amazon,misc,300,expense
+2025-09-14,Local Pharmacy,misc,390,expense
+2025-09-16,Hotstar,subscriptions,350,expense
+2025-09-17,Zomato Delivery Payout,income,10500,income
+2025-09-17,Reliance Fresh,groceries,550,expense
+2025-09-19,Local Pharmacy,misc,370,expense
+2025-09-20,Reliance Fresh,groceries,650,expense
+2025-09-20,Local Grocery Store,groceries,640,expense
+2025-09-22,Big Bazaar,groceries,530,expense
+2025-09-22,Zomato Order,eating_out,530,expense
+2025-09-25,Piped Gas Co,utilities,1010,expense
+2025-09-26,Local Dhaba,eating_out,850,expense
+2025-10-02,City Power & Water,utilities,900,expense
+2025-10-05,Local Metro Card Recharge,transport,480,expense
+2025-10-05,Zomato Order,eating_out,680,expense
+2025-10-06,Ola Cabs,transport,440,expense
+2025-10-07,Big Bazaar,groceries,590,expense
+2025-10-09,Upwork Payment,income,10100,income
+2025-10-09,City Power & Water,utilities,840,expense
+2025-10-10,Consulting Client Payment,income,5000,income
+2025-10-10,Cafe Coffee Day,eating_out,1180,expense
+2025-10-12,Flipkart,misc,480,expense
+2025-10-13,Fiverr Payout,income,13800,income
+2025-10-13,Amazon,misc,350,expense
+2025-10-14,Local Pharmacy,misc,220,expense
+2025-10-14,Amazon,misc,480,expense
+2025-10-17,Local Metro Card Recharge,transport,270,expense
+2025-10-18,Landlord Property Mgmt,rent,12000,expense
+2025-10-21,Uber,transport,200,expense
+2025-10-23,Hotstar,subscriptions,350,expense
+2025-10-24,DMart,groceries,470,expense
+2025-10-25,Spotify,subscriptions,350,expense
+2025-10-26,Local Grocery Store,groceries,670,expense
+2025-10-26,Reliance Fresh,groceries,580,expense
+2025-10-26,Swiggy Order,eating_out,230,expense
+2025-10-27,Big Bazaar,groceries,540,expense
+2025-11-01,Fiverr Payout,income,22600,income
+2025-11-05,Ola Cabs,transport,190,expense
+2025-11-05,Netflix,subscriptions,350,expense
+2025-11-06,Shanti Nagar Apartments,rent,12000,expense
+2025-11-06,Ola Cabs,transport,250,expense
+2025-11-06,Amazon,misc,120,expense
+2025-11-08,Fiverr Payout,income,5800,income
+2025-11-09,Ola Cabs,transport,220,expense
+2025-11-09,Petrol Pump,transport,230,expense
+2025-11-13,Big Bazaar,misc,470,expense
+2025-11-15,Reliance Fresh,groceries,640,expense
+2025-11-15,Petrol Pump,transport,380,expense
+2025-11-18,Local Grocery Store,groceries,870,expense
+2025-11-21,Freelance Client Invoice,income,11100,income
+2025-11-22,Zomato Order,eating_out,390,expense
+2025-11-23,Piped Gas Co,utilities,800,expense
+2025-11-23,Airtel Broadband,utilities,1000,expense
+2025-11-24,Cafe Coffee Day,eating_out,570,expense
+2025-11-24,Big Bazaar,misc,260,expense
+2025-11-25,Big Bazaar,groceries,520,expense
+2025-11-25,Swiggy Order,eating_out,560,expense
+2025-11-25,Cafe Coffee Day,eating_out,520,expense
+2025-11-26,Big Bazaar,groceries,860,expense
+2025-11-26,Local Pharmacy,misc,130,expense
+2025-11-27,Gym Membership,subscriptions,350,expense
+2025-11-27,Local Dhaba,eating_out,470,expense
+2025-12-01,Zomato Order,eating_out,650,expense
+2025-12-03,Local Grocery Store,groceries,520,expense
+2025-12-03,Local Metro Card Recharge,transport,590,expense
+2025-12-03,Local Pharmacy,misc,200,expense
+2025-12-04,Uber,transport,730,expense
+2025-12-05,Landlord Property Mgmt,rent,12000,expense
+2025-12-05,City Power & Water,utilities,890,expense
+2025-12-05,Amazon,misc,280,expense
+2025-12-08,DMart,groceries,650,expense
+2025-12-08,Local Dhaba,eating_out,660,expense
+2025-12-09,Local Dhaba,eating_out,550,expense
+2025-12-10,DMart,groceries,480,expense
+2025-12-13,Swiggy Delivery Payout,income,36200,income
+2025-12-18,Swiggy Delivery Payout,income,5000,income
+2025-12-18,Amazon,misc,160,expense
+2025-12-20,Airtel Broadband,utilities,1150,expense
+2025-12-20,Local Pharmacy,misc,190,expense
+2025-12-20,Flipkart,misc,330,expense
+2025-12-21,Gym Membership,subscriptions,350,expense
+2025-12-21,Local Dhaba,eating_out,650,expense
+2025-12-24,Reliance Fresh,groceries,640,expense
+2025-12-26,Reliance Fresh,groceries,640,expense
+2025-12-27,Hotstar,subscriptions,350,expense

@@ -1,0 +1,376 @@
+date,merchant,category,amount,type
+2025-01-02,Upwork Payment,income,90.48,income
+2025-01-02,Target,misc,34.47,expense
+2025-01-02,Chipotle,eating_out,41.64,expense
+2025-01-03,City Power & Water,utilities,77.95,expense
+2025-01-04,DoorDash Payout,income,780.34,income
+2025-01-07,Costco Wholesale,groceries,57.32,expense
+2025-01-08,Gym Membership,subscriptions,15.0,expense
+2025-01-10,Costco Wholesale,groceries,63.56,expense
+2025-01-10,Uber,transport,20.3,expense
+2025-01-11,Etsy Shop Sales,income,1299.41,income
+2025-01-11,Amazon,misc,40.86,expense
+2025-01-13,Netflix,subscriptions,15.0,expense
+2025-01-14,Starbucks,eating_out,42.09,expense
+2025-01-14,Starbucks,eating_out,21.1,expense
+2025-01-15,City Transit Authority,transport,22.54,expense
+2025-01-15,Shell Gas Station,transport,24.47,expense
+2025-01-17,City Transit Authority,transport,19.06,expense
+2025-01-19,Local Grocery Co-op,groceries,57.89,expense
+2025-01-19,Starbucks,eating_out,34.41,expense
+2025-01-21,Landlord Property Mgmt,rent,1200.0,expense
+2025-01-21,Trader Joe's,groceries,57.33,expense
+2025-01-22,Etsy Shop Sales,income,507.05,income
+2025-01-23,Costco Wholesale,groceries,57.04,expense
+2025-01-24,Chipotle,eating_out,34.0,expense
+2025-01-25,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-01-26,City Power & Water,utilities,78.73,expense
+2025-01-27,Starbucks,eating_out,48.85,expense
+2025-01-29,Lyft,transport,23.5,expense
+2025-01-30,City Transit Authority,transport,26.48,expense
+2025-01-30,Amazon,misc,55.47,expense
+2025-01-30,Uber,transport,25.07,expense
+2025-01-30,Trader Joe's,groceries,54.25,expense
+2025-02-01,Whole Foods Market,groceries,60.78,expense
+2025-02-01,Home Depot,misc,58.64,expense
+2025-02-01,Shell Gas Station,transport,36.55,expense
+2025-02-01,Netflix,subscriptions,15.0,expense
+2025-02-01,Local Grocery Co-op,groceries,92.77,expense
+2025-02-06,Spotify,subscriptions,15.0,expense
+2025-02-06,Costco Wholesale,groceries,53.14,expense
+2025-02-07,City Power & Water,utilities,83.71,expense
+2025-02-07,DoorDash,eating_out,85.22,expense
+2025-02-08,Chipotle,eating_out,5.0,expense
+2025-02-12,Trader Joe's,groceries,63.06,expense
+2025-02-12,Upwork Payment,income,657.24,income
+2025-02-12,Uber,transport,32.76,expense
+2025-02-16,CVS Pharmacy,misc,21.37,expense
+2025-02-17,Target,misc,46.61,expense
+2025-02-18,Starbucks,eating_out,99.53,expense
+2025-02-20,Whole Foods Market,groceries,48.75,expense
+2025-02-23,Amazon,misc,42.67,expense
+2025-02-24,Shell Gas Station,transport,42.65,expense
+2025-02-26,State Gas Co,utilities,61.47,expense
+2025-02-26,Landlord Property Mgmt,rent,1200.0,expense
+2025-02-27,Shell Gas Station,transport,45.96,expense
+2025-02-27,Trader Joe's,groceries,55.16,expense
+2025-02-28,Upwork Payment,income,2066.09,income
+2025-03-01,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-03-02,Consulting Client Payment,income,1557.4,income
+2025-03-02,Uber,transport,21.8,expense
+2025-03-03,Etsy Shop Sales,income,2011.61,income
+2025-03-05,Target,misc,59.66,expense
+2025-03-05,Costco Wholesale,groceries,72.82,expense
+2025-03-08,Gym Membership,subscriptions,15.0,expense
+2025-03-08,Uber,transport,22.54,expense
+2025-03-08,Chipotle,eating_out,5.1,expense
+2025-03-09,Upwork Payment,income,184.72,income
+2025-03-10,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-03-12,Local Grocery Co-op,groceries,85.86,expense
+2025-03-14,Trader Joe's,groceries,59.56,expense
+2025-03-14,Freelance Client Invoice,income,257.57,income
+2025-03-16,Riverside Apartments LLC,rent,1200.0,expense
+2025-03-17,City Transit Authority,transport,39.33,expense
+2025-03-17,DoorDash,eating_out,29.19,expense
+2025-03-20,DoorDash,eating_out,51.62,expense
+2025-03-20,Local Diner,eating_out,41.12,expense
+2025-03-21,Lyft,transport,20.63,expense
+2025-03-22,Home Depot,misc,17.19,expense
+2025-03-22,Costco Wholesale,groceries,75.07,expense
+2025-03-22,Lyft,transport,22.91,expense
+2025-03-22,Amazon,misc,25.72,expense
+2025-03-23,State Gas Co,utilities,60.34,expense
+2025-03-23,State Gas Co,utilities,72.9,expense
+2025-03-23,Shell Gas Station,transport,15.98,expense
+2025-03-24,Netflix,subscriptions,15.0,expense
+2025-03-25,Uber,transport,15.48,expense
+2025-03-26,Local Diner,eating_out,18.82,expense
+2025-03-28,Local Diner,eating_out,20.05,expense
+2025-03-30,Starbucks,eating_out,27.67,expense
+2025-03-30,Whole Foods Market,groceries,90.51,expense
+2025-03-30,Chipotle,eating_out,17.22,expense
+2025-04-01,Whole Foods Market,groceries,56.02,expense
+2025-04-03,Shell Gas Station,transport,19.67,expense
+2025-04-04,Uber,transport,31.37,expense
+2025-04-04,Landlord Property Mgmt,rent,1200.0,expense
+2025-04-05,Gym Membership,subscriptions,15.0,expense
+2025-04-06,CVS Pharmacy,misc,23.68,expense
+2025-04-07,Gym Membership,subscriptions,15.0,expense
+2025-04-08,Home Depot,misc,23.65,expense
+2025-04-09,Target,misc,19.02,expense
+2025-04-10,Trader Joe's,groceries,37.75,expense
+2025-04-10,Trader Joe's,groceries,48.48,expense
+2025-04-11,Target,misc,39.61,expense
+2025-04-12,Trader Joe's,groceries,51.49,expense
+2025-04-13,Home Depot,misc,20.98,expense
+2025-04-13,Amazon,misc,29.14,expense
+2025-04-14,Consulting Client Payment,income,944.1,income
+2025-04-16,Local Grocery Co-op,groceries,59.08,expense
+2025-04-17,Consulting Client Payment,income,2473.42,income
+2025-04-17,Uber,transport,20.33,expense
+2025-04-17,City Power & Water,utilities,66.12,expense
+2025-04-20,City Power & Water,utilities,41.82,expense
+2025-04-21,DoorDash,eating_out,137.63,expense
+2025-04-24,Whole Foods Market,groceries,53.17,expense
+2025-04-25,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-04-25,City Transit Authority,transport,29.72,expense
+2025-04-26,Starbucks,eating_out,134.07,expense
+2025-04-26,Amazon,misc,22.77,expense
+2025-04-26,Uber,transport,21.52,expense
+2025-04-28,Local Diner,eating_out,102.85,expense
+2025-04-29,City Transit Authority,transport,35.89,expense
+2025-04-29,Whole Foods Market,groceries,51.93,expense
+2025-04-29,Local Grocery Co-op,groceries,49.03,expense
+2025-05-01,Starbucks,eating_out,30.69,expense
+2025-05-01,Comcast Internet,utilities,69.08,expense
+2025-05-02,CVS Pharmacy,misc,29.31,expense
+2025-05-02,Spotify,subscriptions,15.0,expense
+2025-05-03,Etsy Shop Sales,income,1875.69,income
+2025-05-05,Starbucks,eating_out,47.94,expense
+2025-05-08,CVS Pharmacy,misc,7.52,expense
+2025-05-08,Landlord Property Mgmt,rent,1200.0,expense
+2025-05-09,Starbucks,eating_out,31.51,expense
+2025-05-11,City Transit Authority,transport,21.88,expense
+2025-05-13,Freelance Client Invoice,income,439.3,income
+2025-05-14,Lyft,transport,36.06,expense
+2025-05-17,Home Depot,misc,9.17,expense
+2025-05-17,Netflix,subscriptions,15.0,expense
+2025-05-19,Consulting Client Payment,income,729.34,income
+2025-05-19,Chipotle,eating_out,60.63,expense
+2025-05-20,Shell Gas Station,transport,22.06,expense
+2025-05-22,CVS Pharmacy,misc,25.28,expense
+2025-05-22,State Gas Co,utilities,48.59,expense
+2025-05-22,Home Depot,misc,34.65,expense
+2025-05-22,Lyft,transport,35.27,expense
+2025-05-23,Chipotle,eating_out,49.75,expense
+2025-05-25,Amazon,misc,33.12,expense
+2025-05-25,Costco Wholesale,groceries,115.68,expense
+2025-05-26,City Transit Authority,transport,16.03,expense
+2025-05-26,Costco Wholesale,groceries,75.38,expense
+2025-05-28,Target,misc,18.52,expense
+2025-05-28,Shell Gas Station,transport,28.07,expense
+2025-05-28,Shell Gas Station,transport,20.72,expense
+2025-05-28,Trader Joe's,groceries,143.47,expense
+2025-05-28,Gym Membership,subscriptions,15.0,expense
+2025-06-02,Starbucks,eating_out,32.33,expense
+2025-06-04,Local Diner,eating_out,27.28,expense
+2025-06-06,Uber Driver Payout,income,843.43,income
+2025-06-07,City Power & Water,utilities,77.2,expense
+2025-06-10,Chipotle,eating_out,66.46,expense
+2025-06-11,Home Depot,misc,44.71,expense
+2025-06-12,Uber,transport,36.74,expense
+2025-06-13,Trader Joe's,groceries,57.74,expense
+2025-06-13,City Power & Water,utilities,72.58,expense
+2025-06-13,Spotify,subscriptions,15.0,expense
+2025-06-15,DoorDash,eating_out,45.0,expense
+2025-06-15,Lyft,transport,21.66,expense
+2025-06-15,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-06-15,Gym Membership,subscriptions,15.0,expense
+2025-06-17,Uber,transport,14.62,expense
+2025-06-17,Landlord Property Mgmt,rent,1200.0,expense
+2025-06-18,Starbucks,eating_out,17.05,expense
+2025-06-19,Whole Foods Market,groceries,50.21,expense
+2025-06-19,Local Grocery Co-op,groceries,60.03,expense
+2025-06-19,Freelance Client Invoice,income,976.26,income
+2025-06-20,Uber Driver Payout,income,1055.11,income
+2025-06-20,Amazon,misc,40.94,expense
+2025-06-22,Chipotle,eating_out,45.11,expense
+2025-06-24,Whole Foods Market,groceries,53.81,expense
+2025-06-24,Uber,transport,20.16,expense
+2025-06-24,Whole Foods Market,groceries,58.47,expense
+2025-06-26,CVS Pharmacy,misc,56.96,expense
+2025-06-26,Target,misc,38.92,expense
+2025-06-26,Uber,transport,23.05,expense
+2025-06-26,Shell Gas Station,transport,13.97,expense
+2025-06-28,Lyft,transport,21.79,expense
+2025-06-29,Trader Joe's,groceries,47.49,expense
+2025-06-29,Costco Wholesale,groceries,62.47,expense
+2025-06-30,Amazon,misc,30.96,expense
+2025-07-01,Lyft,transport,20.16,expense
+2025-07-01,CVS Pharmacy,misc,23.66,expense
+2025-07-01,Uber,transport,24.21,expense
+2025-07-03,CVS Pharmacy,misc,24.16,expense
+2025-07-03,Trader Joe's,groceries,74.77,expense
+2025-07-03,Uber Driver Payout,income,97.62,income
+2025-07-04,Gym Membership,subscriptions,15.0,expense
+2025-07-05,Lyft,transport,22.46,expense
+2025-07-05,Freelance Client Invoice,income,413.2,income
+2025-07-06,Uber,transport,20.11,expense
+2025-07-06,Freelance Client Invoice,income,753.95,income
+2025-07-06,Target,misc,29.2,expense
+2025-07-09,Whole Foods Market,groceries,53.26,expense
+2025-07-10,Home Depot,misc,32.23,expense
+2025-07-10,City Transit Authority,transport,25.58,expense
+2025-07-11,Comcast Internet,utilities,60.33,expense
+2025-07-11,DoorDash,eating_out,74.53,expense
+2025-07-15,Netflix,subscriptions,15.0,expense
+2025-07-15,Gym Membership,subscriptions,15.0,expense
+2025-07-15,Amazon,misc,10.77,expense
+2025-07-17,Shell Gas Station,transport,29.99,expense
+2025-07-19,Comcast Internet,utilities,80.87,expense
+2025-07-20,Landlord Property Mgmt,rent,1200.0,expense
+2025-07-21,Costco Wholesale,groceries,49.49,expense
+2025-07-21,City Transit Authority,transport,22.61,expense
+2025-07-21,Whole Foods Market,groceries,50.11,expense
+2025-07-22,Costco Wholesale,groceries,60.01,expense
+2025-07-23,Starbucks,eating_out,28.5,expense
+2025-07-24,Freelance Client Invoice,income,2873.36,income
+2025-07-25,Trader Joe's,groceries,61.75,expense
+2025-07-26,Chipotle,eating_out,73.31,expense
+2025-07-26,Chipotle,eating_out,82.11,expense
+2025-07-26,Target,misc,17.12,expense
+2025-07-26,Trader Joe's,groceries,58.94,expense
+2025-07-27,City Transit Authority,transport,28.35,expense
+2025-07-27,CVS Pharmacy,misc,16.12,expense
+2025-07-27,Amazon,misc,6.39,expense
+2025-08-01,City Transit Authority,transport,34.4,expense
+2025-08-01,Shell Gas Station,transport,41.44,expense
+2025-08-02,Trader Joe's,groceries,67.18,expense
+2025-08-04,Target,misc,29.42,expense
+2025-08-06,Target,misc,18.3,expense
+2025-08-06,Local Grocery Co-op,groceries,43.65,expense
+2025-08-07,Amazon,misc,41.41,expense
+2025-08-09,Local Diner,eating_out,39.92,expense
+2025-08-11,Comcast Internet,utilities,79.35,expense
+2025-08-11,Consulting Client Payment,income,1247.41,income
+2025-08-13,Whole Foods Market,groceries,49.6,expense
+2025-08-13,Trader Joe's,groceries,46.48,expense
+2025-08-14,Uber,transport,23.0,expense
+2025-08-16,Gym Membership,subscriptions,15.0,expense
+2025-08-17,Etsy Shop Sales,income,1585.21,income
+2025-08-17,Target,misc,34.1,expense
+2025-08-18,Whole Foods Market,groceries,44.8,expense
+2025-08-18,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-08-18,Comcast Internet,utilities,80.88,expense
+2025-08-19,Trader Joe's,groceries,60.07,expense
+2025-08-20,Chipotle,eating_out,52.82,expense
+2025-08-21,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-08-23,Amazon,misc,33.41,expense
+2025-08-24,Uber Driver Payout,income,445.9,income
+2025-08-26,Local Diner,eating_out,65.63,expense
+2025-08-27,Lyft,transport,23.45,expense
+2025-08-28,City Transit Authority,transport,29.37,expense
+2025-08-28,Landlord Property Mgmt,rent,1200.0,expense
+2025-08-29,Local Grocery Co-op,groceries,51.1,expense
+2025-08-30,DoorDash,eating_out,60.79,expense
+2025-09-01,Shell Gas Station,transport,13.28,expense
+2025-09-01,Trader Joe's,groceries,55.1,expense
+2025-09-02,Shell Gas Station,transport,23.84,expense
+2025-09-02,Target,misc,20.85,expense
+2025-09-04,Local Grocery Co-op,groceries,51.3,expense
+2025-09-07,Costco Wholesale,groceries,65.78,expense
+2025-09-08,Comcast Internet,utilities,59.76,expense
+2025-09-08,Shell Gas Station,transport,26.81,expense
+2025-09-08,Local Diner,eating_out,48.0,expense
+2025-09-08,Local Grocery Co-op,groceries,49.04,expense
+2025-09-12,Target,misc,5.0,expense
+2025-09-12,CVS Pharmacy,misc,85.46,expense
+2025-09-13,Landlord Property Mgmt,rent,1200.0,expense
+2025-09-14,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-09-15,Costco Wholesale,groceries,46.15,expense
+2025-09-15,DoorDash,eating_out,39.3,expense
+2025-09-17,Lyft,transport,25.7,expense
+2025-09-17,Shell Gas Station,transport,27.77,expense
+2025-09-17,Local Diner,eating_out,60.89,expense
+2025-09-17,Lyft,transport,25.87,expense
+2025-09-22,Etsy Shop Sales,income,2879.67,income
+2025-09-23,Spotify,subscriptions,15.0,expense
+2025-09-25,Lyft,transport,26.37,expense
+2025-09-25,Chipotle,eating_out,70.05,expense
+2025-09-26,Trader Joe's,groceries,38.51,expense
+2025-09-26,Netflix,subscriptions,15.0,expense
+2025-09-27,CVS Pharmacy,misc,51.22,expense
+2025-09-27,Uber Driver Payout,income,254.8,income
+2025-09-28,Chipotle,eating_out,18.71,expense
+2025-09-30,State Gas Co,utilities,86.96,expense
+2025-09-30,Local Grocery Co-op,groceries,49.35,expense
+2025-10-01,CVS Pharmacy,misc,47.52,expense
+2025-10-02,Home Depot,misc,46.62,expense
+2025-10-03,City Power & Water,utilities,47.98,expense
+2025-10-05,Chipotle,eating_out,31.13,expense
+2025-10-05,Uber Driver Payout,income,697.25,income
+2025-10-06,Home Depot,misc,38.48,expense
+2025-10-06,Chipotle,eating_out,95.38,expense
+2025-10-06,Netflix,subscriptions,15.0,expense
+2025-10-07,Upwork Payment,income,1884.9,income
+2025-10-08,Starbucks,eating_out,26.71,expense
+2025-10-09,Gym Membership,subscriptions,15.0,expense
+2025-10-09,Shell Gas Station,transport,21.24,expense
+2025-10-09,Gym Membership,subscriptions,15.0,expense
+2025-10-11,State Gas Co,utilities,67.49,expense
+2025-10-11,Amazon,misc,42.01,expense
+2025-10-14,Uber,transport,21.22,expense
+2025-10-14,Costco Wholesale,groceries,91.79,expense
+2025-10-17,Shell Gas Station,transport,28.52,expense
+2025-10-18,Uber,transport,12.18,expense
+2025-10-23,Shell Gas Station,transport,33.96,expense
+2025-10-24,Costco Wholesale,groceries,76.89,expense
+2025-10-24,Riverside Apartments LLC,rent,1200.0,expense
+2025-10-25,Local Grocery Co-op,groceries,85.04,expense
+2025-10-25,Costco Wholesale,groceries,83.48,expense
+2025-10-27,Target,misc,48.37,expense
+2025-10-29,Lyft,transport,20.05,expense
+2025-10-30,Chipotle,eating_out,81.74,expense
+2025-11-02,Consulting Client Payment,income,1642.1,income
+2025-11-03,Netflix,subscriptions,15.0,expense
+2025-11-03,Costco Wholesale,groceries,104.68,expense
+2025-11-06,Home Depot,misc,28.16,expense
+2025-11-07,Starbucks,eating_out,52.34,expense
+2025-11-10,Whole Foods Market,groceries,99.0,expense
+2025-11-11,Home Depot,misc,54.71,expense
+2025-11-12,DoorDash,eating_out,37.89,expense
+2025-11-12,Freelance Client Invoice,income,2292.54,income
+2025-11-13,Etsy Shop Sales,income,248.62,income
+2025-11-15,Spotify,subscriptions,15.0,expense
+2025-11-17,Chipotle,eating_out,22.29,expense
+2025-11-17,Comcast Internet,utilities,54.0,expense
+2025-11-17,Riverside Apartments LLC,rent,1200.0,expense
+2025-11-17,Uber,transport,34.41,expense
+2025-11-18,Costco Wholesale,groceries,97.63,expense
+2025-11-18,Upwork Payment,income,4.94,income
+2025-11-19,Lyft,transport,25.96,expense
+2025-11-21,State Gas Co,utilities,67.22,expense
+2025-11-22,Amazon,misc,27.04,expense
+2025-11-24,Lyft,transport,23.74,expense
+2025-11-24,DoorDash,eating_out,23.07,expense
+2025-11-25,Target,misc,61.86,expense
+2025-11-25,Chipotle,eating_out,15.65,expense
+2025-11-25,Chipotle,eating_out,15.8,expense
+2025-11-27,Lyft,transport,24.72,expense
+2025-11-28,Local Diner,eating_out,30.84,expense
+2025-11-28,Local Grocery Co-op,groceries,93.57,expense
+2025-11-29,Netflix,subscriptions,15.0,expense
+2025-11-29,Lyft,transport,14.65,expense
+2025-12-02,CVS Pharmacy,misc,52.22,expense
+2025-12-02,DoorDash,eating_out,30.93,expense
+2025-12-06,Landlord Property Mgmt,rent,1200.0,expense
+2025-12-07,Target,misc,44.39,expense
+2025-12-07,Trader Joe's,groceries,72.63,expense
+2025-12-09,Target,misc,30.01,expense
+2025-12-09,Lyft,transport,23.7,expense
+2025-12-10,Lyft,transport,21.86,expense
+2025-12-11,City Transit Authority,transport,32.33,expense
+2025-12-12,City Transit Authority,transport,23.59,expense
+2025-12-13,Adobe Creative Cloud,subscriptions,15.0,expense
+2025-12-13,Trader Joe's,groceries,76.45,expense
+2025-12-14,Home Depot,misc,20.13,expense
+2025-12-15,Consulting Client Payment,income,2048.68,income
+2025-12-15,Chipotle,eating_out,49.17,expense
+2025-12-17,Costco Wholesale,groceries,75.43,expense
+2025-12-18,Consulting Client Payment,income,531.32,income
+2025-12-18,Spotify,subscriptions,15.0,expense
+2025-12-19,State Gas Co,utilities,69.83,expense
+2025-12-19,Local Diner,eating_out,24.06,expense
+2025-12-20,Chipotle,eating_out,42.65,expense
+2025-12-20,Whole Foods Market,groceries,75.73,expense
+2025-12-20,Uber,transport,21.69,expense
+2025-12-20,DoorDash,eating_out,12.6,expense
+2025-12-21,Local Diner,eating_out,57.17,expense
+2025-12-22,Uber,transport,25.34,expense
+2025-12-23,Netflix,subscriptions,15.0,expense
+2025-12-24,City Power & Water,utilities,84.98,expense
+2025-12-28,Uber,transport,18.61,expense
+2025-12-28,Whole Foods Market,groceries,76.32,expense
+2025-12-29,Lyft,transport,19.5,expense
+2025-12-30,Chipotle,eating_out,9.98,expense
+2025-12-30,CVS Pharmacy,misc,51.44,expense

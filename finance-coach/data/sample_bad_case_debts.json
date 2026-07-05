@@ -1,0 +1,24 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card - ICICI",
+      "balance": 78000,
+      "apr": 42.0,
+      "minimum_payment": 3900
+    },
+    {
+      "name": "Credit Card - SBI",
+      "balance": 24000,
+      "apr": 38.0,
+      "minimum_payment": 1200
+    },
+    {
+      "name": "Personal Loan",
+      "balance": 65000,
+      "apr": 16.0,
+      "minimum_payment": 2600
+    }
+  ],
+  "extra_monthly_payment_budget": 500,
+  "notes": "Low extra budget relative to income variance -- designed to show low solvency probability."
+}

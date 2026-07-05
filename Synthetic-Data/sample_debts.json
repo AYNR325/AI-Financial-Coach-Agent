@@ -1,0 +1,30 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card - Visa",
+      "balance": 4200.0,
+      "apr": 24.99,
+      "minimum_payment": 105.0
+    },
+    {
+      "name": "Credit Card - Store Card",
+      "balance": 1150.0,
+      "apr": 27.99,
+      "minimum_payment": 40.0
+    },
+    {
+      "name": "Personal Loan",
+      "balance": 6800.0,
+      "apr": 11.5,
+      "minimum_payment": 210.0
+    },
+    {
+      "name": "Student Loan",
+      "balance": 15200.0,
+      "apr": 5.8,
+      "minimum_payment": 165.0
+    }
+  ],
+  "extra_monthly_payment_budget": 300.0,
+  "notes": "extra_monthly_payment_budget is the amount available above minimums, to be allocated by avalanche/snowball strategy."
+}

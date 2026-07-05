@@ -1,0 +1,30 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card - HDFC Infinia",
+      "balance": 220000,
+      "apr": 40.0,
+      "minimum_payment": 11000
+    },
+    {
+      "name": "Credit Card - Amex",
+      "balance": 95000,
+      "apr": 38.0,
+      "minimum_payment": 4750
+    },
+    {
+      "name": "Car Loan",
+      "balance": 380000,
+      "apr": 9.5,
+      "minimum_payment": 12500
+    },
+    {
+      "name": "Personal Loan",
+      "balance": 150000,
+      "apr": 15.5,
+      "minimum_payment": 5200
+    }
+  ],
+  "extra_monthly_payment_budget": 2000,
+  "notes": "High earner with heavy debt/lifestyle inflation \u2014 good income, minimal breathing room."
+}

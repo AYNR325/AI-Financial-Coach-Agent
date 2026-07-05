@@ -1,0 +1,322 @@
+"""Build downloadable financial coach reports (HTML + Markdown)."""
+
+from __future__ import annotations
+
+from datetime import datetime
+from html import escape
+from typing import Any
+
+from core.currency import inr
+
+
+def _status(solvency: float) -> str:
+    if solvency >= 0.75:
+        return "Healthy"
+    if solvency >= 0.50:
+        return "Caution"
+    return "At risk"
+
+
+def build_report_markdown(result: dict[str, Any]) -> str:
+    sim = result["simulation"]
+    ip = result["income_profile_dict"]
+    budget = result["budget_dict"]
+    debt_plan = result["debt_plan_dict"]
+    rec = debt_plan["recommended_strategy"]
+    solvency = sim.solvency_probability
+    generated = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+    lines = [
+        "# AI Financial Coach Report",
+        "",
+        f"**Generated:** {generated}  ",
+        f"**Scenario:** {result.get('_preset', 'Custom')}  ",
+        f"**Currency:** Indian Rupees (INR / ₹)",
+        "",
+        "## Snapshot",
+        "",
+        f"| Metric | Value |",
+        f"|---|---|",
+        f"| Status | {_status(solvency)} |",
+        f"| Solvency probability | {solvency * 100:.1f}% |",
+        f"| Safe to spend (week) | {inr(result['safe_to_spend_weekly'])} |",
+        f"| Safe to spend (month) | {inr(result['safe_to_spend_monthly'])} |",
+        f"| Buffer for ~90% safety | {inr(sim.recommended_buffer)} |",
+        f"| Starting buffer | {inr(result.get('_initial_buffer', 0))} |",
+        f"| Recommended debt strategy | {rec.title()} |",
+        f"| Months to debt-free | {debt_plan[rec]['months_to_debt_free']} |",
+        f"| Interest under plan | {inr(debt_plan[rec]['total_interest_paid'])} |",
+        "",
+        "## What to do next",
+        "",
+        f"1. Cap weekly discretionary spend at **{inr(result['safe_to_spend_weekly'])}**.",
+        f"2. Build an emergency buffer of **{inr(sim.recommended_buffer)}**.",
+        f"3. Stick to the **{rec.title()}** debt strategy "
+        f"({debt_plan[rec]['months_to_debt_free']} months).",
+        "",
+        "## Income profile",
+        "",
+        f"- Type: **{ip['income_type']}**",
+        f"- Average monthly income: **{inr(ip['mean_monthly_income'])}**",
+        f"- Std deviation: **{inr(ip['std_dev'])}**",
+        f"- Bad month (p10): **{inr(ip['p10_income'])}**",
+        f"- Good month (p90): **{inr(ip['p90_income'])}**",
+        f"- Months of data: **{ip['months_of_data']}**",
+        "",
+        f"> {result.get('income_narrative', '')}",
+        "",
+        "## Debt plan",
+        "",
+        f"| Strategy | Months | Interest | Total paid |",
+        f"|---|---:|---:|---:|",
+        f"| Avalanche | {debt_plan['avalanche']['months_to_debt_free']} | "
+        f"{inr(debt_plan['avalanche']['total_interest_paid'])} | "
+        f"{inr(debt_plan['avalanche']['total_paid'])} |",
+        f"| Snowball | {debt_plan['snowball']['months_to_debt_free']} | "
+        f"{inr(debt_plan['snowball']['total_interest_paid'])} | "
+        f"{inr(debt_plan['snowball']['total_paid'])} |",
+        "",
+        f"**Recommendation:** {debt_plan.get('recommendation_reason', rec)}",
+        "",
+        f"> {result.get('debt_narrative', '')}",
+        "",
+        "## Budget baseline",
+        "",
+        f"- Total monthly expenses: **{inr(budget['total_monthly_expenses'])}**",
+        f"- Needs (essentials): **{inr(budget['essential_monthly_expenses'])}**",
+        f"- Wants (discretionary): **{inr(budget['discretionary_monthly_expenses'])}**",
+        "",
+    ]
+
+    spend = budget.get("monthly_spend_by_category") or {}
+    if spend:
+        lines.append("| Category | Monthly avg |")
+        lines.append("|---|---:|")
+        for cat, amt in sorted(spend.items(), key=lambda x: -x[1]):
+            lines.append(f"| {cat.replace('_', ' ').title()} | {inr(amt)} |")
+        lines.append("")
+
+    if budget.get("flagged_categories"):
+        flagged = ", ".join(c.replace("_", " ").title() for c in budget["flagged_categories"])
+        lines.append(f"**Trending up:** {flagged}")
+        lines.append("")
+
+    lines.extend(
+        [
+            f"> {result.get('budget_narrative', '')}",
+            "",
+            "## Risk simulation (Monte Carlo)",
+            "",
+            f"- Simulations: **{sim.n_sims:,}**",
+            f"- Horizon: **{sim.horizon_months} months**",
+            f"- Solvency probability: **{solvency * 100:.1f}%**",
+            f"- Debt-free (p10 / median / p90): "
+            f"**{sim.debt_free_month_p10} / {sim.debt_free_month_median} / {sim.debt_free_month_p90}**",
+            f"- Recommended buffer: **{inr(sim.recommended_buffer)}**",
+            "",
+            f"> {result.get('simulation_narrative', '')}",
+            "",
+            "## Coach summary",
+            "",
+            result.get("coach_message", ""),
+            "",
+            "---",
+            "",
+            "_All amounts are in Indian Rupees (₹). Generated by AI Financial Coach._",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def build_report_html(result: dict[str, Any]) -> str:
+    """Self-contained HTML report that works in light and dark browser themes."""
+    sim = result["simulation"]
+    ip = result["income_profile_dict"]
+    budget = result["budget_dict"]
+    debt_plan = result["debt_plan_dict"]
+    rec = debt_plan["recommended_strategy"]
+    solvency = sim.solvency_probability
+    status = _status(solvency)
+    generated = datetime.now().strftime("%Y-%m-%d %H:%M")
+    preset = escape(str(result.get("_preset", "Custom")))
+
+    spend_rows = ""
+    for cat, amt in sorted(
+        (budget.get("monthly_spend_by_category") or {}).items(), key=lambda x: -x[1]
+    ):
+        spend_rows += (
+            f"<tr><td>{escape(cat.replace('_', ' ').title())}</td>"
+            f"<td>{inr(amt)}</td></tr>"
+        )
+
+    debts_rows = ""
+    for d in result.get("_debts_preview", {}).get("debts", []):
+        debts_rows += (
+            f"<tr><td>{escape(str(d['name']))}</td>"
+            f"<td>{inr(d['balance'])}</td>"
+            f"<td>{d['apr']:.2f}%</td>"
+            f"<td>{inr(d['minimum_payment'])}</td></tr>"
+        )
+
+    def p(text: str) -> str:
+        return f"<p class='note'>{escape(text)}</p>" if text else ""
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI Financial Coach Report</title>
+<style>
+  :root {{
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --accent: #0284c7;
+    --hero-from: #0f172a;
+    --hero-to: #0369a1;
+  }}
+  @media (prefers-color-scheme: dark) {{
+    :root {{
+      --bg: #0b1220;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --border: #1f2937;
+      --accent: #38bdf8;
+      --hero-from: #020617;
+      --hero-to: #0c4a6e;
+    }}
+  }}
+  * {{ box-sizing: border-box; }}
+  body {{
+    margin: 0;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }}
+  .wrap {{ max-width: 900px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }}
+  h1 {{ margin: 0 0 0.25rem; font-size: 1.8rem; }}
+  h2 {{ margin: 1.6rem 0 0.6rem; font-size: 1.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }}
+  .meta {{ color: var(--muted); margin-bottom: 1.2rem; }}
+  .hero {{
+    background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+    color: #fff;
+    border-radius: 16px;
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1rem;
+  }}
+  .hero .label {{ opacity: 0.85; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.04em; }}
+  .hero .value {{ font-size: 2.4rem; font-weight: 700; }}
+  .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; }}
+  .card {{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+  }}
+  .card .k {{ color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }}
+  .card .v {{ font-size: 1.25rem; font-weight: 700; margin-top: 0.15rem; }}
+  table {{ width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; }}
+  th, td {{ text-align: left; padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--border); }}
+  th {{ color: var(--muted); font-size: 0.8rem; text-transform: uppercase; }}
+  .note {{
+    background: var(--card);
+    border-left: 4px solid var(--accent);
+    padding: 0.75rem 1rem;
+    border-radius: 0 10px 10px 0;
+    color: var(--text);
+  }}
+  .actions li {{ margin: 0.35rem 0; }}
+  footer {{ margin-top: 2rem; color: var(--muted); font-size: 0.85rem; }}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>AI Financial Coach Report</h1>
+    <div class="meta">Generated {escape(generated)} · Scenario: {preset} · Currency: INR (₹)</div>
+
+    <div class="hero">
+      <div class="label">Safe to spend this week</div>
+      <div class="value">{inr(result['safe_to_spend_weekly'])}</div>
+      <div>{inr(result['safe_to_spend_monthly'])} / month · Status: {status} ({solvency * 100:.0f}% solvent)</div>
+    </div>
+
+    <div class="grid">
+      <div class="card"><div class="k">Solvency</div><div class="v">{solvency * 100:.1f}%</div></div>
+      <div class="card"><div class="k">Buffer target</div><div class="v">{inr(sim.recommended_buffer)}</div></div>
+      <div class="card"><div class="k">Debt strategy</div><div class="v">{escape(rec.title())}</div></div>
+      <div class="card"><div class="k">Debt-free in</div><div class="v">{debt_plan[rec]['months_to_debt_free']} mo</div></div>
+    </div>
+
+    <h2>What to do next</h2>
+    <ol class="actions">
+      <li>Cap weekly discretionary spend at <strong>{inr(result['safe_to_spend_weekly'])}</strong>.</li>
+      <li>Build an emergency buffer of <strong>{inr(sim.recommended_buffer)}</strong>.</li>
+      <li>Stick to the <strong>{escape(rec.title())}</strong> debt strategy.</li>
+    </ol>
+
+    <h2>Income profile</h2>
+    <div class="grid">
+      <div class="card"><div class="k">Type</div><div class="v" style="font-size:1rem">{escape(ip['income_type'])}</div></div>
+      <div class="card"><div class="k">Average</div><div class="v">{inr(ip['mean_monthly_income'])}</div></div>
+      <div class="card"><div class="k">Bad month (p10)</div><div class="v">{inr(ip['p10_income'])}</div></div>
+      <div class="card"><div class="k">Good month (p90)</div><div class="v">{inr(ip['p90_income'])}</div></div>
+    </div>
+    {p(result.get('income_narrative', ''))}
+
+    <h2>Debt plan</h2>
+    <table>
+      <thead><tr><th>Strategy</th><th>Months</th><th>Interest</th><th>Total paid</th></tr></thead>
+      <tbody>
+        <tr><td>Avalanche{" ★" if rec == "avalanche" else ""}</td>
+            <td>{debt_plan['avalanche']['months_to_debt_free']}</td>
+            <td>{inr(debt_plan['avalanche']['total_interest_paid'])}</td>
+            <td>{inr(debt_plan['avalanche']['total_paid'])}</td></tr>
+        <tr><td>Snowball{" ★" if rec == "snowball" else ""}</td>
+            <td>{debt_plan['snowball']['months_to_debt_free']}</td>
+            <td>{inr(debt_plan['snowball']['total_interest_paid'])}</td>
+            <td>{inr(debt_plan['snowball']['total_paid'])}</td></tr>
+      </tbody>
+    </table>
+    {p(result.get('debt_narrative', ''))}
+
+    <h2>Your debts</h2>
+    <table>
+      <thead><tr><th>Name</th><th>Balance</th><th>APR</th><th>Min payment</th></tr></thead>
+      <tbody>{debts_rows or "<tr><td colspan='4'>No debts listed</td></tr>"}</tbody>
+    </table>
+
+    <h2>Budget baseline</h2>
+    <div class="grid">
+      <div class="card"><div class="k">Total expenses</div><div class="v">{inr(budget['total_monthly_expenses'])}</div></div>
+      <div class="card"><div class="k">Needs</div><div class="v">{inr(budget['essential_monthly_expenses'])}</div></div>
+      <div class="card"><div class="k">Wants</div><div class="v">{inr(budget['discretionary_monthly_expenses'])}</div></div>
+    </div>
+    <table>
+      <thead><tr><th>Category</th><th>Monthly avg</th></tr></thead>
+      <tbody>{spend_rows or "<tr><td colspan='2'>No spend data</td></tr>"}</tbody>
+    </table>
+    {p(result.get('budget_narrative', ''))}
+
+    <h2>Risk simulation</h2>
+    <div class="grid">
+      <div class="card"><div class="k">Simulations</div><div class="v">{sim.n_sims:,}</div></div>
+      <div class="card"><div class="k">Horizon</div><div class="v">{sim.horizon_months} mo</div></div>
+      <div class="card"><div class="k">Solvency</div><div class="v">{solvency * 100:.1f}%</div></div>
+      <div class="card"><div class="k">Buffer target</div><div class="v">{inr(sim.recommended_buffer)}</div></div>
+    </div>
+    {p(result.get('simulation_narrative', ''))}
+
+    <h2>Coach summary</h2>
+    {p(result.get('coach_message', ''))}
+
+    <footer>All amounts are in Indian Rupees (₹). Generated by AI Financial Coach.</footer>
+  </div>
+</body>
+</html>
+"""

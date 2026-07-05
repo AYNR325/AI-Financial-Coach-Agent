@@ -1,0 +1,18 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card - HDFC",
+      "balance": 45000,
+      "apr": 36.0,
+      "minimum_payment": 2250
+    },
+    {
+      "name": "Personal Loan",
+      "balance": 120000,
+      "apr": 14.5,
+      "minimum_payment": 4500
+    }
+  ],
+  "extra_monthly_payment_budget": 3000,
+  "notes": "extra_monthly_payment_budget is extra money above minimums used for avalanche/snowball payoff."
+}

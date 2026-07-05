@@ -1,0 +1,24 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card - Visa",
+      "balance": 7800.0,
+      "apr": 26.99,
+      "minimum_payment": 195.0
+    },
+    {
+      "name": "Credit Card - Store Card",
+      "balance": 2400.0,
+      "apr": 29.99,
+      "minimum_payment": 80.0
+    },
+    {
+      "name": "Payday-style Loan",
+      "balance": 1500.0,
+      "apr": 36.0,
+      "minimum_payment": 150.0
+    }
+  ],
+  "extra_monthly_payment_budget": 60.0,
+  "notes": "Low extra budget relative to income variance \u2014 designed to show low solvency probability."
+}

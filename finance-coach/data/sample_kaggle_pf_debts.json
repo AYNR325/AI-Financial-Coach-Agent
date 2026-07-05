@@ -1,0 +1,18 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card",
+      "balance": 22000,
+      "apr": 30.0,
+      "minimum_payment": 1100
+    },
+    {
+      "name": "Consumer Loan",
+      "balance": 40000,
+      "apr": 16.0,
+      "minimum_payment": 1400
+    }
+  ],
+  "extra_monthly_payment_budget": 800,
+  "notes": "Scaled for Personal_Finance_Dataset income levels."
+}

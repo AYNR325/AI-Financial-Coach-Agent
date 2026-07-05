@@ -1,0 +1,12 @@
+{
+  "debts": [
+    {
+      "name": "Credit Card - Axis",
+      "balance": 18000,
+      "apr": 30.0,
+      "minimum_payment": 900
+    }
+  ],
+  "extra_monthly_payment_budget": 6000,
+  "notes": "Stable salaried profile \u2014 used to test 'stable/paycheck' income classification."
+}
